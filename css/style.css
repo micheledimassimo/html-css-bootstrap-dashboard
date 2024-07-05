@@ -5,6 +5,9 @@
 img {
     max-width: 100%;
 }
+.small-text {
+    font-size: 0.70rem;
+}
 /*HEADER*/
 
 header {
@@ -16,6 +19,9 @@ header {
 }
 .my-bg-bar {
     background-color: #F8F9FA;
+}
+.my-bg-blue {
+    background-color: #1B72E8;
 }
 .my-icon {
     font-size: 1.2rem;
@@ -30,7 +36,7 @@ main > section {
 }
 main > section > aside {
     height: 100%;
-    width: 150px;
+    width: 75px;
     background-color: #051E34;
     background-image: url(../img/sidebar-bg.png);
 }
@@ -42,8 +48,14 @@ main > section > aside > nav > ul{
 }
 main > section > div {
     height: 100%;
+    width: calc(100% - 150px);
 }
 main > section > aside > nav > ul {
     list-style: none;
 }
-/*FOOTER*/
+
+@media screen and (min-width: 992px) {
+    main > section > aside {
+        width: 150px;
+    }
+}
