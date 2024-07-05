@@ -12,6 +12,10 @@ img {
 
 header {
     height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .logo-container > img {
     max-height: 50px;
@@ -30,6 +34,8 @@ header {
 main {
     height: calc(100vh - 60px);
     background-color: aqua;
+    margin-top: 60px;
+    width: 100%;
 }
 main > section {
     height: 100%;
@@ -48,14 +54,20 @@ main > section > aside > nav > ul{
 }
 main > section > div {
     height: 100%;
-    width: calc(100% - 150px);
+    width: calc(100% - 75px);
 }
 main > section > aside > nav > ul {
     list-style: none;
 }
-
+.table-img {
+    width: 25px;
+    margin-right: 3px;
+}
 @media screen and (min-width: 992px) {
     main > section > aside {
         width: 150px;
+    }
+    main > section > div {
+        width: calc(100% - 150px);
     }
 }
