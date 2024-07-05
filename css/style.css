@@ -18,8 +18,32 @@ header {
     background-color: #F8F9FA;
 }
 .my-icon {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 /*MAIN*/
-
+main {
+    height: calc(100vh - 60px);
+    background-color: aqua;
+}
+main > section {
+    height: 100%;
+}
+main > section > aside {
+    height: 100%;
+    width: 150px;
+    background-color: #051E34;
+    background-image: url(../img/sidebar-bg.png);
+}
+main > section > aside > nav {
+    height: 100%;
+}
+main > section > aside > nav > ul{
+    height: 100%;
+}
+main > section > div {
+    height: 100%;
+}
+main > section > aside > nav > ul {
+    list-style: none;
+}
 /*FOOTER*/
