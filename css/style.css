@@ -8,6 +8,9 @@ img {
 .small-text {
     font-size: 0.70rem;
 }
+.smaller-text {
+    font-size: 0.85rem;
+}
 /*HEADER*/
 
 header {
@@ -55,6 +58,7 @@ main > section > aside > nav > ul{
 main > section > div {
     height: 100%;
     width: calc(100% - 75px);
+    overflow-y: auto;
 }
 main > section > aside > nav > ul {
     list-style: none;
@@ -63,6 +67,15 @@ main > section > aside > nav > ul {
     width: 25px;
     margin-right: 3px;
 }
+.table-col-w {
+    width: 18%;
+}
+
+
+/*MEDIAQUERY*/
+@media screen and (min-width: 768) {
+
+}
 @media screen and (min-width: 992px) {
     main > section > aside {
         width: 150px;
@@ -70,4 +83,8 @@ main > section > aside > nav > ul {
     main > section > div {
         width: calc(100% - 150px);
     }
+    .table-col-w {
+        width: 13%;
+    }
 }
+
