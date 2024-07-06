@@ -28,7 +28,7 @@
                                 <form class="container-fluid">
                                   <div class="input-group">
                                     <span class="input-group-text border-end-0  " id="basic-addon1"><i class="bi bi-search"></i></span>
-                                    <input type="text" class="form-control border-start-0 my-bg-bar" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="basic-addon1">
+                                    <input type="text" class="form-control border-start-0 my-bg" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="basic-addon1">
                                   </div>
                                 </form>
                               </nav>
@@ -61,25 +61,25 @@
                     <nav>
                         <ul class="d-flex flex-column">
                             <li>
-                                <a class="mt-2 text-light link-underline link-underline-opacity-0 px-1 fs-6  my-icon" href="#">
+                                <a class="mt-3 text-light link-underline link-underline-opacity-0 px-1 fs-5  my-icon" href="#">
                                     <i class="bi bi-house-door-fill"></i>
                                     <span class="d-none d-lg-inline-block">Home</span>
                                 </a>
                             </li>
                             <li>   
-                                <a class="mt-1 text-light link-underline link-underline-opacity-0 px-1 fs-6  my-icon" href="#">
+                                <a class="mt-2 text-light link-underline link-underline-opacity-0 px-1 fs-5  my-icon" href="#">
                                     <i class="bi bi-bar-chart-fill"></i>
                                     <span class="d-none d-lg-inline-block">Stats</span>
                                 </a>
                             </li>
                             <li class="flex-grow-1">    
-                                <a class="mt-1 text-light link-underline link-underline-opacity-0 px-1 fs-6  my-icon" href="#">
+                                <a class="mt-2 text-light link-underline link-underline-opacity-0 px-1 fs-5  my-icon" href="#">
                                     <i class="bi bi-reception-4"></i>
                                     <span class="d-none d-lg-inline-block">Signal</span>
                                 </a>
                             </li>
-                            <li>
-                                <a class="mb-2 align-items-end text-light link-underline link-underline-opacity-0 px-1 fs-6  my-icon " href="#">
+                            <li class="pb-2">
+                                <a class="mb-2 align-items-end text-light link-underline link-underline-opacity-0 px-1 fs-5  my-icon " href="#">
                                     <i class="bi bi-gear-fill"></i>
                                     <span class="d-none d-lg-inline-block">Admin</span>
                                 </a>
@@ -89,7 +89,7 @@
                         </ul>
                     </nav>
                 </aside>
-                <div>
+                <div class="my-bg">
                     <div class="container-fluid my-bg-blue">
                         <div class="row pt-2">
                             <div class="col-12 col-md-4 col-lg-2 order-md-3">
@@ -126,13 +126,13 @@
                     </div>
                     <div class="container-fluid "> 
                         <div class="row w-100">
-                            <div class="col-12 col-lg-8">
-                                <div>
-                                    <div class="card w-100">
-                                        <div class="card-header">
-                                            prossime classi
+                            <div class="col-12 col-lg-8 mb-2">
+                                <div class="pt-2 mb-2">  <!--tabella-->
+                                    <div class="card w-100 ">
+                                        <div class="card-header fw-bold fs-4 p-3">
+                                            Prossime classi
                                         </div>
-                                        <div class="card-body p-0">
+                                        <div class="card-body ">
                                             <table class="table smaller-text">
                                                 <thead>
                                                   <tr>
@@ -310,10 +310,103 @@
                                               </table>
                                         </div>
                                       </div>
+                                      
                                 </div>
+                                <div class="card w-100 mt-2">     <!--accordion-->
+                                    <div class="card-header text-uppercase fw-bold fs-3">
+                                      f.a.q.
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                      <li class="list-group-item">
+                                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                  Come aggiungere un nuovo studente?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body ">Clicca sul + in alto nella sezione blu</div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                  Come posso accedere alle informazioni del mio account?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Clicca sull'icona della campanella</div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                              <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                  Posso usare questa dashboard da mobile?
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                              </div>
+                                            </div>
+                                          </div>
+
+                                      </li>
+                                      
+                                  </div>
                             </div>
                             <div class="col-12 col-lg-4">
-
+                                <div class=" pt-2 mb-2">
+                                    <div class="card w-100" >
+                                        <div class="card-header fw-bold fs-2">
+                                          Todo
+                                        </div>
+                                        <ul class="list-group list-group-flush p-2">
+                                          <li class="list-group-item">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                                  <label class="form-check-label fw-bold" for="firstCheckbox">Kickoff nuove classi</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                                  <label class="form-check-label fw-bold" for="secondCheckbox">Lezione su Bootstrap 5 in classe #75</label>
+                                                </li>
+                                                <li class="list-group-item">
+                                                  <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                                  <label class="form-check-label fw-bold" for="thirdCheckbox">Controllare username Github utenti</label>
+                                                </li>
+                                              </ul>
+                                        </li>
+                                          
+                                        </ul>
+                                      </div>
+                                </div>
+                                <div class="mt-3 pb-4">
+                                    <div class="card w-100">
+                                        <ul class="list-group list-group-flush">
+                                          <li class="list-group-item">
+                                                <div class="card w-100 border border-secondary-subtle">
+                                                    <img src="img/stats.jpeg" class="card-img-top" alt="stats">
+                                                    <div class="card-body fw-bold">
+                                                    <h5 class="card-title">Utenti attivi</h5>
+                                                    <p class="card-text">Lista degli utenti attivi in piattaforma negli ultimo mese</p>
+                                                    
+                                                    </div>
+                                                </div>
+                                        </li>
+                                        <li class="list-group-item fw-bold">
+                                            Gennaio: 1200
+                                        </li>
+                                        <li class="list-group-item fw-bold">
+                                            Febbraio: 800
+                                        </li>
+                                        <li class="list-group-item fw-bold">
+                                            Marzo: 1500
+                                        </li>
+                                        </ul>
+                                      </div>
+                                </div>
                             </div>
                         </div>
                     </div>
