@@ -1,6 +1,4 @@
-/*FONT*/
 
-/*Debug*/
 /*General*/
 img {
     max-width: 100%;
@@ -70,11 +68,16 @@ main > section > aside > nav > ul {
     width: 18%;
 }
 
-
+.my-bg .container-fluid .row .col-12 > div > .my-offcanvas-width {
+    width: 100%;
+}
 /*MEDIAQUERY*/
+
+/*tablet*/
 @media screen and (min-width: 768) {
 
 }
+/*desktop*/
 @media screen and (min-width: 992px) {
     main > section > aside {
         width: 150px;
@@ -84,6 +87,9 @@ main > section > aside > nav > ul {
     }
     .table-col-w {
         width: 13%;
+    }
+    .my-bg .container-fluid .row .col-12 > div > .my-offcanvas-width {
+        width: 50%;
     }
 }
 

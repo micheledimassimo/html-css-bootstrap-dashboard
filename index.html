@@ -96,7 +96,146 @@
                                 <div >
                                     <p class="text-light fs-6 pt-4">
                                         Nuovo studente 
-                                        <button type="button" class="btn btn-outline-light">+</button>
+                                        <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                                        <div class="offcanvas offcanvas-end my-offcanvas-width" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                        <div class="offcanvas-header">
+                                            <h4 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h4>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h5>Nome</h5>
+                                                    <div class="input-group mb-3">
+                                                        
+                                                        <input type="text" class="form-control"  aria-label="Nome" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h5>Cognome</h5>
+                                                    <div class="input-group mb-3">
+                                                        
+                                                        <input type="text" class="form-control"  aria-label="Cognome" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h5>Email</h5>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control"  aria-label="Email" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <h5>Password</h5>
+                                                    <div class="input-group mb-3">
+                                                        
+                                                        <input type="text" class="form-control"  aria-label="Password" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100">
+                                                <h5>Indirizzo</h5>
+                                                <div class="input-group mb-3">
+                                                    <input type="text" class="form-control"  aria-label="Indirizzo" aria-describedby="basic-addon1" required>
+                                                  </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h5>Città</h5>
+                                                    <div class="input-group mb-3">
+                                                        
+                                                        <input type="text" class="form-control"  aria-label="Nome" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h5>Stato</h5>
+                                                    <div class="input-group mb-3">
+                                                        <select class="form-select" id="inputGroupSelect01" required>
+                                                          <option selected disabled>Scegli...</option>
+                                                          <option value="1">Albania</option>
+                                                          <option value="2">Andorra</option>
+                                                          <option value="3">Armenia</option>
+                                                          <option value="4">Austria</option>
+                                                          <option value="5">Azerbaigian</option>
+                                                          <option value="6">Belgio</option>
+                                                          <option value="7">Bielorussia</option>
+                                                          <option value="8">Bosnia ed Erzegovina</option>
+                                                          <option value="9">Bulgaria</option>
+                                                          <option value="10">Cipro</option>
+                                                          <option value="11">Città del Vaticano</option>
+                                                          <option value="12">Croazia</option>
+                                                          <option value="13">Danimarca</option>
+                                                          <option value="14">Estpnia</option>
+                                                          <option value="15">Finlanida</option>
+                                                          <option value="16">Francia</option>
+                                                          <option value="17">Georgia</option>
+                                                          <option value="18">Germania</option>
+                                                          <option value="19">Grecia</option>
+                                                          <option value="20">Irlanda</option>
+                                                          <option value="21">Islanda</option>
+                                                          <option value="22">Itlia</option>
+                                                          <option value="23">Kazakistan</option>
+                                                          <option value="24">Lettonia</option>
+                                                          <option value="25">Liechtenstein</option>
+                                                          <option value="26">Lituania</option>
+                                                          <option value="27">Lussemburgo</option>
+                                                          <option value="28">Macedonia del Nord</option>
+                                                          <option value="29">Malta</option>
+                                                          <option value="30">Moldavia</option>
+                                                          <option value="31">Monaco</option>
+                                                          <option value="32">Montenegro</option>
+                                                          <option value="33">Norvegia</option>
+                                                          <option value="34">Paesi Bassi</option>
+                                                          <option value="35">Polonia</option>
+                                                          <option value="36">Portogallo</option>
+                                                          <option value="37">Regno Unito</option>
+                                                          <option value="38">Repubblica Ceca</option>
+                                                          <option value="39">Romania</option>
+                                                          <option value="40">Russia</option>
+                                                          <option value="41">San Marino</option>
+                                                          <option value="42">Serbia</option>
+                                                          <option value="43">Slovacchia</option>
+                                                          <option value="44">Slovenia</option>
+                                                          <option value="45">Spagna</option>
+                                                          <option value="46">Svezia</option>
+                                                          <option value="47">Svizzera</option>
+                                                          <option value="48">Turchia</option>
+                                                          <option value="49">Ucraina</option>
+                                                          <option value="50">Ungheria</option>                
+                                                        </select>
+                                                      </div>
+                                                </div>
+                                                <div class="col-2">
+                                                    <h5>CAP</h5>
+                                                    <div class="input-group mb-3">
+                                                        
+                                                        <input type="text" class="form-control"  aria-label="CAP" aria-describedby="basic-addon1" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="w-100">
+                                                <h5>Foto</h5>
+                                                <div class="input-group">
+                                                    <input type="file" class="form-control" id="inputGroupFile04" accept="image/*" multiple aria-describedby="inputGroupFileAddon04" aria-label="Upload" required>
+                                                  </div>
+                                            </div>
+                                            <div class="mt-4">
+                                                <input type="checkbox" id="check-form" value="html">
+                                                <label for="check-form">
+                                                    <span class="fw-bold ms-1">
+                                                        Seleziona per proseguire
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="mt-4">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </div>
+                                        </div>
                                     </p>
                                 </div>
                             </div>
