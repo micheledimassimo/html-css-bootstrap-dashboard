@@ -67,7 +67,10 @@ main > section > aside > nav > ul {
 .table-col-w {
     width: 18%;
 }
+main > section > aside > nav > ul > li:hover > a {
+    background-color: rgba(255, 255, 255, 0.7);
 
+}
 .my-bg .container-fluid .row .col-12 > div > .my-offcanvas-width {
     width: 100%;
 }
@@ -93,3 +96,5 @@ main > section > aside > nav > ul {
     }
 }
 
+/*
+ <i class="bi bi-bell-fill"></i>
